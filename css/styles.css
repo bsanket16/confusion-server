@@ -9,18 +9,36 @@
     color: floralwhite;
 }
 
-.content{
-    padding: 2rem;
+.header-text{
+    text-align: justify;
 }
 
+.content{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+/* h3{
+    margin-bottom: 1.5rem;
+} */
+
 .row-content{
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 1rem 0rem 1.5rem 0rem;
     border-bottom: 1px ridge;
 }
 
+.row-cont{
+    padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+
+.justi{
+    text-align: justify;
+}
+
 .footer{
-    background-color: gainsboro;
-    padding: 3rem;
+    background-color: #E4E1DD;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
 address{
@@ -28,6 +46,5 @@ address{
 }
 
 .row-footer{
-    margin-top: 1rem;
-    margin-bottom: -2rem;
+    padding-top: 1.5rem;
 }
