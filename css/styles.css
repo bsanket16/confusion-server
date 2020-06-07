@@ -1,0 +1,33 @@
+*{
+    margin: 0px auto;
+    padding: 0px auto;
+    box-sizing: border-box;
+}
+
+.jumbotron{
+    background-color: darksalmon;
+    color: floralwhite;
+}
+
+.content{
+    padding: 2rem;
+}
+
+.row-content{
+    padding: 5rem 0rem 5rem 0rem;
+    border-bottom: 1px ridge;
+}
+
+.footer{
+    background-color: gainsboro;
+    padding: 3rem;
+}
+
+address{
+    font-size: 90%;
+}
+
+.row-footer{
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+}
