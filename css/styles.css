@@ -64,6 +64,12 @@ li.nav-item{
     text-align: justify;
 }
 
+.tab-content{
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 2rem;
+}
 
 .footer{
     background-color: #E6EBE0;
