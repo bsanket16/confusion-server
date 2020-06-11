@@ -35,8 +35,8 @@ body{
     text-decoration: none;
 }
 .row-contenti{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     border-bottom: 1px ridge;
 }
 .card-header{
