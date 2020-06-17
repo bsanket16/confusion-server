@@ -67,3 +67,7 @@ body {
   cursor: pointer; }
   .card .card-header {
     background-color: #D1C4E9; }
+    .badge-default {
+      color: #fff;
+      background-color: #6c757d;
+  }
