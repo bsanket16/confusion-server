@@ -62,3 +62,8 @@ body {
 
 .modal-body {
   background-color: #D1C4E9; }
+
+.card {
+  cursor: pointer; }
+  .card .card-header {
+    background-color: #D1C4E9; }

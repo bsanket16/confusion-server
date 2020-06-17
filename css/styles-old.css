@@ -39,9 +39,6 @@ header-text{
   padding-bottom: 3rem;
   border-bottom: 1px ridge;
 }
-.card-header{
-  background-color: #F2BE11;
-}
 .navbar-dark{
   background-color: #182628;
 }
@@ -169,3 +166,4 @@ address{
 #sec{
     margin-left: 1rem;
 }
+

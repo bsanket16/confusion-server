@@ -7,7 +7,10 @@
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell"
+
   },
   "author": "",
   "license": "ISC",
@@ -16,10 +19,13 @@
     "jquery": "^3.5.1",
     "lite-server": "^2.3.0",
     "node-sass": "^4.14.1",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
     "popper.js": "^1.16.1"
   },
   "dependencies": {
     "bootstrap-social": "^5.1.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "sass": "^1.26.8"
   }
 }

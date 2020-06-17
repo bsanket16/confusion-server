@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-old.css">
 
     <title>Ristorante Con Fusion: About Us</title>
 
@@ -29,13 +30,17 @@
             </button>
 
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item "><a class="nav-link" href="./index.html"><span class="fa fa-home"></span> Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info"></span>&nbsp About</a></li>
+                    <li class="nav-item active" ><a class="nav-link" href="./aboutus.html"><span class="fa fa-info"></span>&nbsp About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"></span> Login</a></li>
                 </ul>   
+
+                <span class="navbar-text mr-5">
+                    <a id="login"><span class="fa fa-sign-in"></span> Login</a>
+                </span>
+
             </div>
         </div>
     </nav>
@@ -147,7 +152,7 @@
                 <h2>Corporate Leadership</h2><br>
 
             
-                <div class="accordion">
+                <div id="accordion">
                     <div class="card">
 
                         <div class="card-header">
@@ -318,6 +323,7 @@
             <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
             <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
             <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="js/script.js"></script>   
             
 </body>
 
