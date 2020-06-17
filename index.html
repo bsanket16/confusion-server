@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles-old.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Ristorante Con Fusion</title>
 </head>
@@ -35,8 +36,7 @@
                 </ul>   
 
                 <span class="navbar-text mr-5">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                    <a id="login"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
 
             </div>
@@ -94,7 +94,7 @@
                 </div>   
                     
                 <div class="col-7 col-sm-3 ">
-                    <a class="non" data-toggle="modal" data-target="#reserve"> <button type="button" class="btn warn"><h6>Reserve Table</h6></button></a>
+                    <a class="non"> <button type="button" id="show" class="btn warn"><h6>Reserve Table</h6></button></a>
                 </div>
 
             </div>
@@ -245,6 +245,13 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                    </div>
+
                 </div>
             </div>
     </div>
@@ -351,10 +358,40 @@
         </div>
     </footer>
 
+    
+
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script>
+            $("#carouselButton").click(function(){
+            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                $("#mycarousel").carousel('pause');
+                $("#carouselButton").children("span").removeClass('fa-pause');
+                $("#carouselButton").children("span").addClass('fa-play');
+            }
+            else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                $("#mycarousel").carousel('cycle');
+                $("#carouselButton").children("span").removeClass('fa-play');
+                $("#carouselButton").children("span").addClass('fa-pause');                    
+            }
+        });
+
+        $("#show").click(function () {
+            $('#reserve').modal('show')
+        })
+
+        $("#login").click(function () {
+            $('#loginModal').modal('show')
+        })
+
+</script>
+
+
 
 </body>
 
